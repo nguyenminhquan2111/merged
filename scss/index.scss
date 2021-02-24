@@ -1,0 +1,423 @@
+// variable
+$purple-color: #8067f8;
+$orange-color: #f97c68;
+$gray-color: #afb2b7;
+$dark-gray-color: #353d41;
+$padding-section: 1.8rem 0;
+$padding-container: 0 6rem;
+
+// mixin
+@mixin title-h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+
+@mixin p-container {
+  font-size: 0.7rem;
+  font-weight: 400;
+  word-spacing: 0.1rem;
+  line-height: 1.2rem;
+}
+
+@mixin btn__purple {
+  border: 2px solid #8067f8;
+  background-color: #8067f8;
+  font-size: 0.8rem;
+  color: #ffffff;
+  padding: 0.3rem 1rem;
+}
+
+// css
+* {
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+// begin header
+.header {
+  .header__contact {
+    padding: $padding-container;
+    display: flex;
+    background-color: $dark-gray-color;
+    justify-content: space-between;
+    align-items: center;
+    .contact__icon {
+      i {
+        font-size: 0.8rem;
+        padding: 0.8rem 0.5rem;
+        color: #ffffff;
+      }
+    }
+    p {
+      font-size: 0.8rem;
+      color: #ffffff;
+    }
+  }
+  .header__nav {
+    padding: $padding-container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header__logo {
+      font-weight: 500;
+      color: $gray-color;
+      font-size: 1.3rem;
+      letter-spacing: 0.1rem;
+      padding: 0.5rem 0;
+      span {
+        color: $purple-color;
+        font-size: 1.5rem;
+      }
+    }
+    .header__item {
+      a {
+        padding: 0 0.5rem;
+        letter-spacing: 0.05rem;
+        font-weight: 900;
+        font-size: 0.6rem;
+        color: $dark-gray-color;
+        &:hover {
+          color: $purple-color;
+        }
+      }
+    }
+  }
+}
+// end header
+
+// begin banner
+.banner {
+  .banner__container {
+    height: 30rem;
+    background-image: url(../img/b1.jpg);
+    background-size: cover;
+    .banner__color {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: $padding-container;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .banner__item {
+        text-align: center;
+        color: #ffffff;
+        h1 {
+          letter-spacing: 0.2rem;
+          font-size: 2.5rem;
+          font-weight: 400;
+        }
+        p {
+          padding: 1rem 5rem;
+          @include p-container;
+        }
+        a {
+          margin: 0 0.1rem;
+        }
+        .btn__clear {
+          border: 2px solid #ffffff;
+          font-size: 0.8rem;
+          color: #ffffff;
+          padding: 0.3rem 1rem;
+        }
+        .btn__purple {
+          @include btn__purple;
+        }
+      }
+    }
+  }
+}
+// end banner
+
+// begin get
+.get {
+  padding: $padding-section;
+  text-align: center;
+  .get__container {
+    padding: $padding-container;
+    .get__title {
+      @include title-h1;
+    }
+    p {
+      @include p-container;
+    }
+  }
+  hr {
+    border: 0.1px solid #ececec;
+    margin: 3rem 10rem 2rem 10rem;
+  }
+  .get__row {
+    padding: $padding-container;
+    display: flex;
+    .get__col {
+      flex: 1;
+      padding: 1rem;
+      .get__item {
+        i {
+          color: $orange-color;
+          font-size: 1.5rem;
+        }
+        span {
+          line-height: 2.5rem;
+          font-size: 1rem;
+          font-weight: 900;
+          word-spacing: 0.1rem;
+          letter-spacing: 0.05rem;
+        }
+        p {
+          @include p-container;
+        }
+      }
+    }
+    .get__col__2 {
+      border-left: 1px solid $gray-color;
+      border-right: 1px solid $gray-color;
+    }
+  }
+}
+// end get
+
+// begin stats
+.stats {
+  background-image: url(../img/3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  .stats__title {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 6rem;
+    p {
+      color: #ffffff;
+      @include title-h1;
+      letter-spacing: 0.1rem;
+      font-weight: 400;
+      word-spacing: 0.2rem;
+    }
+    a {
+      @include btn__purple;
+    }
+  }
+  .stats__container {
+    background-color: #ffffff;
+    padding: 2.5rem 6rem;
+    h1 {
+      @include title-h1;
+    }
+    p {
+      @include p-container;
+    }
+    .stats__row {
+      margin-top: 3rem;
+      display: flex;
+      .stats__col {
+        flex: 1;
+        .stats__item {
+          h2 {
+            color: $orange-color;
+            font-size: 2rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+          }
+          span {
+            font-size: 0.8rem;
+            font-weight: 900;
+            letter-spacing: 0.05rem;
+          }
+        }
+      }
+    }
+  }
+}
+// end stats
+
+// begin service
+.services {
+  background-image: url(../img/3.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding: $padding-section;
+  text-align: center;
+  .services__container {
+    h1 {
+      @include title-h1;
+      color: #ffffff;
+    }
+    & > p {
+      @include p-container;
+      color: #ffffff;
+      margin-bottom: 3rem;
+    }
+  }
+  .services__row {
+    margin-bottom: 1rem;
+    padding: $padding-container;
+    display: flex;
+    flex-wrap: wrap;
+    .services__col {
+      width: calc(100% / 3);
+      .services__item {
+        padding: 1.5rem 0.8rem;
+        i {
+          font-size: 2.5rem;
+          margin-bottom: 0.5rem;
+        }
+        span {
+          font-size: 1.2rem;
+          margin-bottom: 5rem;
+          font-weight: 700;
+          letter-spacing: 0.1rem;
+        }
+        p {
+          margin-top: 0.5rem;
+          @include p-container;
+        }
+      }
+      .item__white {
+        background-color: #ffffff;
+        i {
+          color: $orange-color;
+        }
+      }
+      .item__orange {
+        color: #ffffff;
+        background-color: $orange-color;
+      }
+    }
+  }
+}
+// end service
+
+// begin customer
+.customer {
+  text-align: center;
+  padding: $padding-section;
+  p {
+    @include p-container;
+  }
+  .customer__container {
+    margin-bottom: 5rem;
+    h1 {
+      @include title-h1;
+    }
+  }
+  .customer__row {
+    margin-bottom: 5rem;
+    padding: $padding-container;
+    display: flex;
+    .customer__col {
+      flex: 1;
+      .customer__item {
+        padding: 0 1rem;
+        img {
+          width: 25%;
+          border: 5px solid #8067f8;
+          border-radius: 50%;
+        }
+        span {
+          font-size: 1rem;
+          letter-spacing: 0.05rem;
+          font-weight: 900;
+          line-height: 2rem;
+        }
+      }
+    }
+  }
+}
+// end customer
+
+// begin footer
+.footer {
+  .footer__container {
+    background-color: #000000;
+    padding: $padding-container;
+    .footer__row {
+      display: flex;
+      .footer__col {
+        padding: 1rem;
+        span {
+          color: $orange-color;
+          font-weight: 500;
+          font-size: 1rem;
+          letter-spacing: 0.05rem;
+          line-height: 2rem;
+        }
+        & > div {
+          margin: 1rem 0;
+        }
+        p {
+          @include p-container;
+          color: $gray-color;
+        }
+      }
+      .footer__col__1 {
+        flex: 6;
+        div div {
+          margin-top: 1rem;
+          border: 1px solid $gray-color;
+          display: flex;
+          justify-content: space-between;
+          input {
+            padding-left: 1rem;
+            border: 0;
+            background-color: #000000;
+          }
+          a {
+            @include btn__purple;
+            // display: inline-block;
+          }
+        }
+      }
+      .footer__col__2 {
+        flex: 2;
+        div {
+          display: flex;
+          flex-direction: column;
+          a {
+            color: #ececec;
+            font-size: 0.7rem;
+            line-height: 1.2rem;
+          }
+        }
+      }
+      .footer__col__3 {
+        flex: 4;
+        div {
+          display: grid;
+          grid-template-columns: repeat(8, 1fr);
+          grid-row-gap: 0.2rem;
+          i {
+            color: #f97c68;
+            font-size: 0.7rem;
+          }
+          p {
+            grid-column: 2 / span 7;
+          }
+        }
+      }
+    }
+  }
+  .footer__copyright {
+    p {
+      font-size: 0.7rem;
+      padding: 0.3rem;
+    }
+    color: #ffffff;
+    text-align: center;
+    background-color: #252525;
+    padding: 0.5rem;
+  }
+}
+// end footer

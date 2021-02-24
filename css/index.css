@@ -1,0 +1,333 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem; }
+
+body {
+  max-width: 1000px;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+
+.header .header__contact {
+  padding: 0 6rem;
+  display: flex;
+  background-color: #353d41;
+  justify-content: space-between;
+  align-items: center; }
+  .header .header__contact .contact__icon i {
+    font-size: 0.8rem;
+    padding: 0.8rem 0.5rem;
+    color: #ffffff; }
+  .header .header__contact p {
+    font-size: 0.8rem;
+    color: #ffffff; }
+.header .header__nav {
+  padding: 0 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header .header__nav .header__logo {
+    font-weight: 500;
+    color: #afb2b7;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 0; }
+    .header .header__nav .header__logo span {
+      color: #8067f8;
+      font-size: 1.5rem; }
+  .header .header__nav .header__item a {
+    padding: 0 0.5rem;
+    letter-spacing: 0.05rem;
+    font-weight: 900;
+    font-size: 0.6rem;
+    color: #353d41; }
+    .header .header__nav .header__item a:hover {
+      color: #8067f8; }
+
+.banner .banner__container {
+  height: 30rem;
+  background-image: url(../img/b1.jpg);
+  background-size: cover; }
+  .banner .banner__container .banner__color {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 6rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+    .banner .banner__container .banner__color .banner__item {
+      text-align: center;
+      color: #ffffff; }
+      .banner .banner__container .banner__color .banner__item h1 {
+        letter-spacing: 0.2rem;
+        font-size: 2.5rem;
+        font-weight: 400; }
+      .banner .banner__container .banner__color .banner__item p {
+        padding: 1rem 5rem;
+        font-size: 0.7rem;
+        font-weight: 400;
+        word-spacing: 0.1rem;
+        line-height: 1.2rem; }
+      .banner .banner__container .banner__color .banner__item a {
+        margin: 0 0.1rem; }
+      .banner .banner__container .banner__color .banner__item .btn__clear {
+        border: 2px solid #ffffff;
+        font-size: 0.8rem;
+        color: #ffffff;
+        padding: 0.3rem 1rem; }
+      .banner .banner__container .banner__color .banner__item .btn__purple {
+        border: 2px solid #8067f8;
+        background-color: #8067f8;
+        font-size: 0.8rem;
+        color: #ffffff;
+        padding: 0.3rem 1rem; }
+
+.get {
+  padding: 1.8rem 0;
+  text-align: center; }
+  .get .get__container {
+    padding: 0 6rem; }
+    .get .get__container .get__title {
+      font-size: 2rem;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 0.6rem; }
+    .get .get__container p {
+      font-size: 0.7rem;
+      font-weight: 400;
+      word-spacing: 0.1rem;
+      line-height: 1.2rem; }
+  .get hr {
+    border: 0.1px solid #ececec;
+    margin: 3rem 10rem 2rem 10rem; }
+  .get .get__row {
+    padding: 0 6rem;
+    display: flex; }
+    .get .get__row .get__col {
+      flex: 1;
+      padding: 1rem; }
+      .get .get__row .get__col .get__item i {
+        color: #f97c68;
+        font-size: 1.5rem; }
+      .get .get__row .get__col .get__item span {
+        line-height: 2.5rem;
+        font-size: 1rem;
+        font-weight: 900;
+        word-spacing: 0.1rem;
+        letter-spacing: 0.05rem; }
+      .get .get__row .get__col .get__item p {
+        font-size: 0.7rem;
+        font-weight: 400;
+        word-spacing: 0.1rem;
+        line-height: 1.2rem; }
+    .get .get__row .get__col__2 {
+      border-left: 1px solid #afb2b7;
+      border-right: 1px solid #afb2b7; }
+
+.stats {
+  background-image: url(../img/3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center; }
+  .stats .stats__title {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 6rem; }
+    .stats .stats__title p {
+      color: #ffffff;
+      font-size: 2rem;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.1rem;
+      font-weight: 400;
+      word-spacing: 0.2rem; }
+    .stats .stats__title a {
+      border: 2px solid #8067f8;
+      background-color: #8067f8;
+      font-size: 0.8rem;
+      color: #ffffff;
+      padding: 0.3rem 1rem; }
+  .stats .stats__container {
+    background-color: #ffffff;
+    padding: 2.5rem 6rem; }
+    .stats .stats__container h1 {
+      font-size: 2rem;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 0.6rem; }
+    .stats .stats__container p {
+      font-size: 0.7rem;
+      font-weight: 400;
+      word-spacing: 0.1rem;
+      line-height: 1.2rem; }
+    .stats .stats__container .stats__row {
+      margin-top: 3rem;
+      display: flex; }
+      .stats .stats__container .stats__row .stats__col {
+        flex: 1; }
+        .stats .stats__container .stats__row .stats__col .stats__item h2 {
+          color: #f97c68;
+          font-size: 2rem;
+          font-weight: 900;
+          margin-bottom: 0.5rem; }
+        .stats .stats__container .stats__row .stats__col .stats__item span {
+          font-size: 0.8rem;
+          font-weight: 900;
+          letter-spacing: 0.05rem; }
+
+.services {
+  background-image: url(../img/3.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding: 1.8rem 0;
+  text-align: center; }
+  .services .services__container h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0.6rem;
+    color: #ffffff; }
+  .services .services__container > p {
+    font-size: 0.7rem;
+    font-weight: 400;
+    word-spacing: 0.1rem;
+    line-height: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 3rem; }
+  .services .services__row {
+    margin-bottom: 1rem;
+    padding: 0 6rem;
+    display: flex;
+    flex-wrap: wrap; }
+    .services .services__row .services__col {
+      width: calc(100% / 3); }
+      .services .services__row .services__col .services__item {
+        padding: 1.5rem 0.8rem; }
+        .services .services__row .services__col .services__item i {
+          font-size: 2.5rem;
+          margin-bottom: 0.5rem; }
+        .services .services__row .services__col .services__item span {
+          font-size: 1.2rem;
+          margin-bottom: 5rem;
+          font-weight: 700;
+          letter-spacing: 0.1rem; }
+        .services .services__row .services__col .services__item p {
+          margin-top: 0.5rem;
+          font-size: 0.7rem;
+          font-weight: 400;
+          word-spacing: 0.1rem;
+          line-height: 1.2rem; }
+      .services .services__row .services__col .item__white {
+        background-color: #ffffff; }
+        .services .services__row .services__col .item__white i {
+          color: #f97c68; }
+      .services .services__row .services__col .item__orange {
+        color: #ffffff;
+        background-color: #f97c68; }
+
+.customer {
+  text-align: center;
+  padding: 1.8rem 0; }
+  .customer p {
+    font-size: 0.7rem;
+    font-weight: 400;
+    word-spacing: 0.1rem;
+    line-height: 1.2rem; }
+  .customer .customer__container {
+    margin-bottom: 5rem; }
+    .customer .customer__container h1 {
+      font-size: 2rem;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 0.6rem; }
+  .customer .customer__row {
+    margin-bottom: 5rem;
+    padding: 0 6rem;
+    display: flex; }
+    .customer .customer__row .customer__col {
+      flex: 1; }
+      .customer .customer__row .customer__col .customer__item {
+        padding: 0 1rem; }
+        .customer .customer__row .customer__col .customer__item img {
+          width: 25%;
+          border: 5px solid #8067f8;
+          border-radius: 50%; }
+        .customer .customer__row .customer__col .customer__item span {
+          font-size: 1rem;
+          letter-spacing: 0.05rem;
+          font-weight: 900;
+          line-height: 2rem; }
+
+.footer .footer__container {
+  background-color: #000000;
+  padding: 0 6rem; }
+  .footer .footer__container .footer__row {
+    display: flex; }
+    .footer .footer__container .footer__row .footer__col {
+      padding: 1rem; }
+      .footer .footer__container .footer__row .footer__col span {
+        color: #f97c68;
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: 0.05rem;
+        line-height: 2rem; }
+      .footer .footer__container .footer__row .footer__col > div {
+        margin: 1rem 0; }
+      .footer .footer__container .footer__row .footer__col p {
+        font-size: 0.7rem;
+        font-weight: 400;
+        word-spacing: 0.1rem;
+        line-height: 1.2rem;
+        color: #afb2b7; }
+    .footer .footer__container .footer__row .footer__col__1 {
+      flex: 6; }
+      .footer .footer__container .footer__row .footer__col__1 div div {
+        margin-top: 1rem;
+        border: 1px solid #afb2b7;
+        display: flex;
+        justify-content: space-between; }
+        .footer .footer__container .footer__row .footer__col__1 div div input {
+          padding-left: 1rem;
+          border: 0;
+          background-color: #000000; }
+        .footer .footer__container .footer__row .footer__col__1 div div a {
+          border: 2px solid #8067f8;
+          background-color: #8067f8;
+          font-size: 0.8rem;
+          color: #ffffff;
+          padding: 0.3rem 1rem; }
+    .footer .footer__container .footer__row .footer__col__2 {
+      flex: 2; }
+      .footer .footer__container .footer__row .footer__col__2 div {
+        display: flex;
+        flex-direction: column; }
+        .footer .footer__container .footer__row .footer__col__2 div a {
+          color: #ececec;
+          font-size: 0.7rem;
+          line-height: 1.2rem; }
+    .footer .footer__container .footer__row .footer__col__3 {
+      flex: 4; }
+      .footer .footer__container .footer__row .footer__col__3 div {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-row-gap: 0.2rem; }
+        .footer .footer__container .footer__row .footer__col__3 div i {
+          color: #f97c68;
+          font-size: 0.7rem; }
+        .footer .footer__container .footer__row .footer__col__3 div p {
+          grid-column: 2 / span 7; }
+.footer .footer__copyright {
+  color: #ffffff;
+  text-align: center;
+  background-color: #252525;
+  padding: 0.5rem; }
+  .footer .footer__copyright p {
+    font-size: 0.7rem;
+    padding: 0.3rem; }
